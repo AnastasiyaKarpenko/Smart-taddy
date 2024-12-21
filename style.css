@@ -9,6 +9,7 @@
 header {
      background-color: #9C7E6E;
      padding: 25px 0;
+
     
 
 }
@@ -56,4 +57,104 @@ header .actions span {
     text-align: center;
     margin-left: -10px;
 }
+.hero { 
+    background-image:url(img/Group_3123464.png);/*Устанавливаем картинку фоном в блоке*/
+    background-repeat: no-repeat; /*Чтобы изображение не раздваивалось*/
+    background-size: cover; /*Сохраняет исходный размер картинки*/
+    padding: 48px 0;
+    }
+
+.hero-left, 
+.hero-right {
+    border: 2px solid #bb2c2c ;
+    display: inline-block;
+}
+.hero-left {
+    width: 53%;
+    /*display="inline-block"*/
+    vertical-align: top;
+}
+.hero-left h1 {
+    /*margin-top: 100px;*/
+    font-size: 50px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.hero-left p {
+    color: rgba(102, 69, 53, 1);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 28px 0 59px 0;
+}
+.hero-left a {
+    background-color: rgba(7, 7, 7, 1);
+    text-decoration: none;
+    padding: 17px 33px;  /*Задаем размеры кнопки через padding*/
+    color: #fff ;
+    display: inline-block;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.hero-left a:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.635);
+}
+.hero-right img:first-child {
+    width: 550px;
+}
+/*Делаем позиционирование*/
+.hero-right {  /*Находим родителя второй картинки*/
+    position: relative; 
+    left: -70px;
+    display: inline-block;
+}
+.hero-right img:first-child {
+    width: 600px;
+}
+.hero-right img:last-child { /*Находим само изображение*/
+    position: absolute;  /*Делаем позиционирование*/
+    width: 230px; 
+    right: 0px;
+    bottom: -20px;
+}
+.tutorial {
+    padding: 82px 0;
+    
+
+}
+.title {
+    text-align: center;
+}
+.title h2 {
+    font-size: 40px;
+    color: rgba(102, 69, 53, 1);
+    
+}
+.title h2 span {
+    color:rgba(117, 181, 200, 1);
+    
+}
+.title p {
+    color: rgba(102, 69, 53, 1);
+    width: 55%;
+   display: inline-block; /*Если не сработает, то применяем margine:0 auto;*/
+    text-align: center;
+    margin: 11px 0 0 37px;
+}
+.tutorial  .card-left {
+    position: relative; /*ОБЯЗАТЕЛЬНО У РОДИТЕЛЯ ДОЛЖНО БЫТЬ */
+    border: 2px solid red;
+    display: inline-block;
+}
+.tutorial .card .card-left img:last-child { /*Находим само изображение*/
+    position: absolute;  /*Делаем позиционирование*/
+    right: -75px;
+    bottom: -50px;
+}
+
+
+
+
 

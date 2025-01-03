@@ -1,160 +1,202 @@
 
-*, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Golos Text", sans-serif;
-
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Golos Text", sans-serif;
 }
+
 header {
-     background-color: #9C7E6E;
-     padding: 25px 0;
-
-    
-
+  background-color: rgba(156, 126, 110, 1);
+  padding: 25px 0;
 }
-header .container> * , 
-header li { /*Уточняем чтобы работало класс container*/
-    display: inline-block;
+
+header .container > *,
+header li {
+  display: inline-block;
 }
+
 .container {
-    border: 2px solid #3c3c3c ;
-    width: 1112px;
-    margin: 0 auto;
+  border: 2px solid blue;
+  max-width: 1112px; /* Максимальная ширина, чтобы экран мог 
+  ужиматься и расширяться без внешних изменений и деформаций*/
+  margin: 0 auto;
 }
+
+.container-small {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 header .logo {
-    margin-right: 30px;  /*Смотрим размер на макете сайта*/
+  margin-right: 30px;
 }
 header nav {
-    vertical-align: 25px;
+  vertical-align: 25px;
 }
-header nav li {
-    margin-right: 34px;  /*Смотрим размер на макете сайта*/
-}
-header nav li:last-child { margin-right: 0;} /*Для сохранения отступа*/
-header nav a {
-    text-decoration: none ;
-    color: #fff;
-}
-header .actions {
-    margin-left: 320px;
-    vertical-align: 18px;
-}
-header .actions button {
-    border: none;
-    background-color: transparent; 
-    margin-right: 43px;
-}
-header .actions span {
-    border-radius: 50%;
-    background-color: #fff;
-    display: inline-block;
-   width: 22px;
-   height: 22px;
-    font-weight: bold;
-    color: #9C7E6E ;
-    vertical-align: 30px;
-    text-align: center;
-    margin-left: -10px;
-}
-.hero { 
-    background-image:url(img/Group_3123464.png);/*Устанавливаем картинку фоном в блоке*/
-    background-repeat: no-repeat; /*Чтобы изображение не раздваивалось*/
-    background-size: cover; /*Сохраняет исходный размер картинки*/
-    padding: 48px 0;
-    }
 
-.hero-left, 
-.hero-right {
-    border: 2px solid #bb2c2c ;
-    display: inline-block;
+header nav li {
+  margin-right: 34px;
 }
+header nav li:last-child {
+  margin-right: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .actions {
+  margin-left: 320px;
+  vertical-align: 18px;
+}
+
+header .actions button {
+  border: none;
+  background-color: transparent;
+  margin-right: 43px;
+}
+
+header .actions span {
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  font-weight: bold;
+  color: rgba(156, 126, 110, 1);
+  text-align: center;
+  vertical-align: 30px;
+  margin-left: -10px;
+}
+
+.hero {
+  background-image: url(img/Group_3123464.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 48px 0;
+}
+
+.hero-left,
+.hero-right {
+  /* border: 1px solid yellow; */
+  display: inline-block;
+}
+
 .hero-left {
-    width: 53%;
-    /*display="inline-block"*/
-    vertical-align: top;
+  width: 580px;
+  vertical-align: 95px;
+  position: relative;
+  z-index: 1;
 }
 .hero-left h1 {
-    /*margin-top: 100px;*/
-    font-size: 50px;
-    color: #fff;
-    position: relative;
-    z-index: 1;
+  color: #fff;
+  font-size: 50px;
 }
-.hero-left p {
-    color: rgba(102, 69, 53, 1);
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 28px 0 59px 0;
-}
-.hero-left a {
-    background-color: rgba(7, 7, 7, 1);
-    text-decoration: none;
-    padding: 17px 33px;  /*Задаем размеры кнопки через padding*/
-    color: #fff ;
-    display: inline-block;
-    border-radius: 30px;
-    font-weight: bold;
-    font-size: 22px;
-}
-.hero-left a:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.635);
-}
-.hero-right img:first-child {
-    width: 550px;
-}
-/*Делаем позиционирование*/
-.hero-right {  /*Находим родителя второй картинки*/
-    position: relative; 
-    left: -70px;
-    display: inline-block;
-}
-.hero-right img:first-child {
-    width: 600px;
-}
-.hero-right img:last-child { /*Находим само изображение*/
-    position: absolute;  /*Делаем позиционирование*/
-    width: 230px; 
-    right: 0px;
-    bottom: -20px;
-}
-.tutorial {
-    padding: 82px 0;
-    
 
+.hero-left p {
+  color: rgba(102, 69, 53, 1);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 28px 0 59px 0;
+}
+
+.hero-left a {
+  background-color: black;
+  color: #fff;
+  display: inline-block;
+  padding: 17px 33px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 22px;
+}
+.hero-left a:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.633);
+}
+
+.hero-right img:first-child {
+  width: 550px;
+}
+.hero-right {
+  position: relative;
+  left: -70px;
+}
+.hero-right img:first-child {
+  width: 520px;
+}
+.hero-right img:last-child {
+  width: 230px;
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+}
+
+.tutorial {
+  padding: 82px 0;
 }
 .title {
-    text-align: center;
+  text-align: center;
 }
 .title h2 {
-    font-size: 40px;
-    color: rgba(102, 69, 53, 1);
-    
+  font-size: 40px;
 }
 .title h2 span {
-    color:rgba(117, 181, 200, 1);
-    
+  color: rgba(117, 181, 200, 1);
 }
 .title p {
-    color: rgba(102, 69, 53, 1);
-    width: 55%;
-   display: inline-block; /*Если не сработает, то применяем margine:0 auto;*/
-    text-align: center;
-    margin: 11px 0 0 37px;
-}
-.tutorial  .card-left {
-    position: relative; /*ОБЯЗАТЕЛЬНО У РОДИТЕЛЯ ДОЛЖНО БЫТЬ */
-    border: 2px solid red;
-    display: inline-block;
-}
-.tutorial .card .card-left img:last-child { /*Находим само изображение*/
-    position: absolute;  /*Делаем позиционирование*/
-    right: -75px;
-    bottom: -50px;
+  width: 650px;
+  display: inline-block;
+  margin: 11px 0 37px;
 }
 
+.tutorial .card-left {
+  position: relative; /* позиционирование чтобы сделать наложение на этот блок*/
+  display: inline-block;
+}
 
+.tutorial .card-left img:last-child {
+  position: absolute; /*делаем наложение этой картинки*/
+  bottom: -50px;
+  right: -75px;
+}
 
+.tutorial .card-right {
+  display: inline-block;
+  vertical-align: 150px;
+  font-size: 40px;
+  width: 435px;
+  margin-left: 180px;
+  color: rgba(102, 69, 53, 1);
+}
+/*делаем блок, чтобы он появился, без верстания в html
+Если блок является полноценным и с отличиями от других, то делаем в html.
+*/
+.card-left::before /*делаем псевдоэлемент через before или after*/
+{ content: "Easy to control!"; /*Чтобы появился текст или пустота*/
+  position: absolute;
+  top: 50px; /*Задаем координаты, двигаем сверху вниз*/
+  right: -100px; /* двигаем слева вправо*/
+  width: 140px;
+  font-size: 19.81px;
+  line-height: 27.02px;
 
-
+  /*height: 30px;*/
+  padding: 24px 20px;
+  border-radius: 7.59px 7.59px 7.59px  0;
+  background-color: rgba(240, 240, 238, 1);
+  /*чтобы появился элем-т задаем размеры*/
+} 
+/*находим родителя и выставляем position relativ*/
+.card2 {
+  margin-top: 77px;
+}
+.card2 .card-right {
+  margin-left: 0;
+}
+.card2 .card-left {
+  margin-left: 180px;  /*сдвинули картинку вправо*/
+}

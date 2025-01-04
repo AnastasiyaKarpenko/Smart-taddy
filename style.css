@@ -200,3 +200,130 @@ header .actions span {
 .card2 .card-left {
   margin-left: 180px;  /*сдвинули картинку вправо*/
 }
+
+.offer .wrapper /*задача контейнера-отцентровать контент, больше ничего не добавляем*/
+{ background-color: rgba(19, 176, 177, 1);
+border-radius: 20px;
+color: #fff;
+padding: 45px 103px;
+}
+.offer-left {
+  width: 484px;
+  display: inline-block;
+  
+}
+.offer-left h3{
+  font-size: 30px;
+  margin-bottom: 18px;
+}
+.offer a {
+display: inline-block;
+text-decoration: none;
+  background-color: rgba(255, 133, 67, 1); 
+  padding: 10px 100px;
+  border-radius: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  vertical-align: 30px;
+}
+.fairytailes .container{
+  padding: 20px;
+  overflow: hidden;/*если что-то выйдет за пределы контейнера, будет обрезаться*/
+}
+.fairytailes {
+  margin-bottom: 300px;
+}
+.fairytailes .wrap {
+  width: 140%;
+  position: relative;/*делаем позиционирование*/
+  left: -50px;
+ 
+}
+.fairytailes-card {
+  display: inline-block;
+  margin-right: 15px;
+  border-radius: 10px;
+  width: 220px;
+  height: 290px;
+}
+/*
+.fairytailes-card:nth-child(1){
+  background-color: aqua;
+}
+.fairytailes-card:nth-child(2){
+  background-color: rgb(183, 0, 255);
+}
+.fairytailes-card:nth-child(3){
+  background-color: rgb(255, 0, 0);
+}
+.fairytailes-card:nth-child(4){
+  background-color: rgb(255, 251, 0);
+}
+.fairytailes-card:nth-child(5){
+  background-color: rgb(43, 255, 0);
+}*/
+.description {
+margin-bottom: 100px;
+padding: 60px 0;
+}
+.description h3 {
+  font-size: 40px;
+  display: inline-block;
+  width: 400px;
+  vertical-align: 120px ;
+  margin-left: 100px;
+}
+.description .color {
+  color: rgba(19, 176, 177, 1);
+  position: relative;
+}
+
+/* кривая clip-patch */
+.description .color::after {
+  background-color: red;
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 70px;
+  width: 320px;
+  height: 10px; /* высота области с линией */
+  background-color: black;/* цвет линии*/
+  clip-path: path("M0,10 C0,10 75,5 290,0");
+
+
+}
+.battery {
+  padding: 28px 0;
+  text-align: center;
+
+}
+.battery .circle
+{ display: inline-block;
+background-color: rgb(132, 179, 194);
+width: 130px ;
+height:130px ;
+border-radius: 50%;
+}
+.circle label {
+  margin: 0 auto;
+  color: #fff;
+  font-size: 22px;
+}
+.battery .circle svg  {
+margin: 15px auto 10px;
+  width: 100px;
+  height: 50px;
+margin-top: 10px;
+color: #fff;
+}
+h4 {
+  text-align: center;
+  width: 250px;
+  margin: 20px auto 0;
+  color: #696363;
+  line-height: 40px;
+  font-size: 32px;
+}
+
+
+

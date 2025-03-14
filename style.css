@@ -308,6 +308,7 @@ border-radius: 50%;
   margin: 0 auto;
   color: #fff;
   font-size: 22px;
+  display: block;
 }
 .battery .circle svg  {
 margin: 15px auto 10px;
@@ -324,6 +325,86 @@ h4 {
   line-height: 40px;
   font-size: 32px;
 }
+.money-back {
+  position: relative;
 
+}
+.money-back-left {
+display: inline-block;
+}
+.money-back-left h3{
+  text-transform: uppercase;
 
+}
+.money-back-left {
+  width: 480px;
+
+}
+
+.money-back-wrapper{
+  background-color:rgba(115, 114,189, 1) ;
+  border-radius: 20px;
+  color: #fff;
+  padding:44px 73px 26px ;
+}
+.money-back-left h3{
+  font-size: 40px ;
+}
+.money-back-left p{
+  font-size: 18px ;
+  margin: 0 18px;
+}
+.money-back-left a {
+  color: #fff;
+  border-radius: 30px;
+  background-color: rgba(255, 133, 67, 1);
+  padding: 17px 124px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.money-back-left a::after{
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: -40px;
+  width: 30px;
+  height: 80px ;
+  background-color: #dfd7d7;
+  filter: blur(20px);
+  transform: rotate(25deg);
+  transition: 0.5s;
+
+}
+.money-back-left a:hover:after {
+  transform: translateX(350px) rotate(25deg);
+
+}
+.money-back-right{
+  border: 2px solid red;
+}
+.money-back-right {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  
+}
+.money-back-right img{
+  position: absolute;
+}
+.money-back-right img:nth-child(1){
+  top:-115px;
+  left: 50px;
+}
+.money-back-right img:nth-child(2){
+  top:30px;
+  left: 250px;
+}
+.money-back-wrapper > img {
+  position: absolute;
+  left: 0px;
+  top: 0px ;
+}
 

@@ -18,7 +18,6 @@ header li {
 }
 
 .container {
-  border: 2px solid blue;
   max-width: 1112px; /* Максимальная ширина, чтобы экран мог 
   ужиматься и расширяться без внешних изменений и деформаций*/
   margin: 0 auto;
@@ -34,6 +33,7 @@ header .logo {
 }
 header nav {
   vertical-align: 25px;
+  
 }
 
 header nav li {
@@ -46,6 +46,11 @@ header nav li:last-child {
 header nav a {
   text-decoration: none;
   color: #fff;
+  cursor: pointer;
+}
+header nav a:hover {
+  box-shadow: 0 0 10px 0 #00000057;
+ color: #000;
 }
 
 header .actions {
@@ -407,4 +412,147 @@ display: inline-block;
   left: 0px;
   top: 0px ;
 }
+footer{
+  background-color: rgba(70, 9, 9, 0.563);
+  color: #fff;
+  padding: 40px;
+}
 
+.footer-top > *, /* селлектор ко всем дочерним элементам применяем */
+footer nav ul{
+display: inline-block;
+list-style: none;
+margin-right: 170px;
+}
+.footer-top ul:last-child{
+  margin-right: 0;
+}
+footer .logo {
+
+  margin-right: 0;
+}
+footer .info {
+  width: 250px;
+}
+.footer-top > *,
+.footer-top nav > ul {
+  vertical-align: top;
+}
+.footer-top a:not(.logo){ /* через селлектор применяем команду ко всем, кроме logo*/
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  display: block;
+}
+.footer-top ul li:first-child{   
+  font-weight: bold;
+  font-size: larger ; /* больше, чем текущий шрифт*/
+  margin-bottom: 20px;
+
+
+}
+.footer-top h5{
+  font-size: 21px;
+  margin-bottom: 21px;
+  
+}
+.footer-top .info p{
+  line-height: 30px;
+}
+footer form label {
+  display: block;
+  margin-bottom: 15px;
+}
+footer form input[type="email"] {
+  width: 260px;
+  padding: 10px 20px;
+  background-color: transparent;  /* прозрачность*/
+  border: 1px solid rgba(255, 255, 255, 0.562);
+  border-radius: 40px ;
+  color: rgba(255, 255, 255);
+  transition: .3s; /* время для подсветки фокус*/
+
+}
+footer form input[type="email"]:focus{
+  outline: none; /* УБИРАЕМ У БОРДЕРА ВТОРУЮ ГРАНИЦУ ПРИ НАЖАТИИ*/
+  border-color: rgba(255, 255, 255);
+}
+footer form input[type="email"]::placeholder{
+  color: rgba(255, 255, 255, 0.562);
+
+}
+footer form {
+  position: relative;
+  display: inline-block;
+}
+footer form input[type="image"] {
+  background-color: transparent; 
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin-left: 100px;
+  position: absolute;
+  left: 110px;
+  top: 35px;
+  transition: .3s;
+}
+footer form input[type="image"]:hover{
+  right: 50px;
+}
+footer .socials {
+  margin-top: 30px;
+ 
+  text-align: center;
+
+}
+footer .socials a{
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+width: 60px;
+height: 60px;
+background-color: #fff;
+border-radius: 20px;
+box-shadow:0 5px 5px 6px #e0d2d254 ;
+position: relative;
+overflow: hidden; /* не показывать за пределами*/
+}
+footer .socials i{
+  font-size: 22px;
+  color: aqua;
+  vertical-align: -20px;
+  transition: .2s ;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+footer .socials a:hover i{ /* при наведении на область квадрата иконка увеличивается*/
+font-size: 26px;
+color: #fff;
+}
+footer .socials a:after{
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: -80px;
+  width: 90px;
+  height: 90px;
+  background-color: aqua;
+  transform: rotate(45deg);
+  transition: 0.5s;
+  
+  
+}
+footer .socials a:hover::after{ 
+  top: -5px;
+  left: -20px;
+  animation: move 0.7s;
+}
+@keyframes move {  /* название анимации*/
+  
+  50%{
+    transform:translate(45px, -45px) rotate(45deg);
+  }
+ 
+}
